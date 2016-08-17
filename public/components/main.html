@@ -1,1 +1,6 @@
-<h1>Main </h1>
+<h1>Teams</h1>
+<div class="" ng-repeat="team in vm.teams" >
+  <h2>{{team.location}}</h2>
+  <span>total win:{{team.record.wins}}</span>
+  <span>total losses:{{team.record.losses}}</span>  
+</div>

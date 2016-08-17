@@ -1,7 +1,8 @@
 
-var myApp = angular.module('app', ['ui.router']);
+var routerApp = angular.module('app', ['ui.router']);
 
-myApp.config(['$stateProvider', '$urlRouterProvider',
-    function ($stateProvider, $urlRouterProvider){
-         $urlRouterProvider.otherwise('/main');
-    }]);
+routerApp.config(function($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.otherwise('/main');
+
+});
