@@ -1,11 +1,7 @@
 
-angular.module('app', [
-	'ngRoute',
-	'LocalStorageModule',
-    'app.home',
-	])
+var myApp = angular.module('app', ['ui.router']);
 
-.config(['$routeProvider', '$locationProvider',
-    function ($routeProvider, $locationProvider){
-        $locationProvider.html5Mode(true);
-    }])
+myApp.config(['$stateProvider', '$urlRouterProvider',
+    function ($stateProvider, $urlRouterProvider){
+         $urlRouterProvider.otherwise('/main');
+    }]);

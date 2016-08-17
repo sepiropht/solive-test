@@ -1,7 +1,7 @@
 var controller = require(__base + 'api/controllers/home');
 
 module.exports = [{
-    path: '/api/test',
+    path: '/api/stat',
     httpMethod: 'GET',
     middleware: [controller.test],
 }];

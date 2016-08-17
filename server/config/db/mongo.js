@@ -1,7 +1,9 @@
 var mongoose = require('mongoose');
 var config = {
    port: process.env.PORT || 8000,
-   db: process.env.MONGOLAB_URI || 'mongodb://localhost/solive_test'
+   db: 'mongodb://root:azerty@ds023475.mlab.com:23475/blog'
+
+
 };
 
 module.exports = mongoose.connect(config.db, function(err) {
