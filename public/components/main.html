@@ -1,6 +1,18 @@
-<h1>Teams</h1>
-<div class="" ng-repeat="team in vm.teams" >
-  <h2>{{team.location}}</h2>
-  <span>total win:{{team.record.wins}}</span>
-  <span>total losses:{{team.record.losses}}</span>  
+<h1>League1 teams results</h1>
+<table class="table">
+   <thead>
+     <tr>
+       <th>teams</th>
+       <th>Wins</th>
+       <th>losses</th>
+     </tr>
+   </thead>
+   <tbody ng-repeat="team in vm.teams">
+     <tr >
+       <td class="info">{{team.location}}</td>
+       <td class="sucess">{{team.record.wins}}</td>
+       <td class="danger">{{team.record.losses}}</td>
+     </tr>
+   </tbody>
+ </table>
 </div>
